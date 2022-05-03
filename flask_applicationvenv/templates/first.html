@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My slam book</title>
+</head>
+
+<body>
+
+    <h1>My slam book</h1>
+
+<!--  <form action="{{ url_for("my_form")}}/info" method = "post"> -->
+  <form action="http://127.0.0.1:5000/info" method = "post" enctype = "multipart/form-data">
+
+    <label for="fname">First name:</label>
+    <input type="text"  name="fname"><br><br>
+
+    <label for="lname">Last name:</label>
+    <input type="text"  name="lname"><br><br>
+
+    <input type="radio" name="gender" value="Man">
+    <label for="html">Male</label><br>
+    <input type="radio" name="gender" value="Woman">
+    <label for="html">Female</label><br><br>
+
+    <label for="birthday">Birthday:</label>
+    <input type="date" name="birthday"><br><br>
+
+    <input type="file"  name="file"><br><br>
+
+<!-- textarea, dropodown with single select, multiselect, photo upload,  -->
+ 
+  <input type="submit" value="Submit">
+</form>
+</body>
+</html>
